@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart - SnapCart</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e56c6c;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        .cart-icon {
+            font-size: 24px;
+            color: #007BFF;
+            float: right;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+        .checkout-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .checkout-btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>My Cart <i class="fas fa-shopping-cart cart-icon"></i></h2>
+        
+        <div class="cart-item">
+            <span>Candy</span>
+            <span> &#8377; 10</span>
+        </div>
+        <div class="cart-item">
+            <span>Dairy Milk</span>
+            <span> &#8377;20</span>
+        </div>
+        <div class="cart-item">
+            <span>Pepsi</span>
+            <span> &#8377;30</span>
+        </div>
+        
+        <button class="checkout-btn"> <a href="order.html"> Check Out</a></button>
+    </div>
+</body>
+</html>
